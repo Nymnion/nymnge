@@ -1,52 +1,65 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #23272a;
-    color: #ffffff;
-}
-
-.hero {
+body {
+    font-family: 'Poppins', sans-serif;
+   
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background: #2c2f33;
-}
-
-.content {
-    text-align: center;
-    background-color: #2f3136;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.content h1 {
-    font-size: 3em;
     margin: 0;
-    color: #7289da;
+    padding: 20px;
+    background-color: #2d2d2d; /* Dark gray background */
+    color: #333; /* Light gray text color */
 }
 
-.content p {
-    font-size: 1.2em;
-    margin: 10px 0 20px;
-    color: #99aab5;
+h1 {
+    color: #1e90ff; /* Light blue color for the title */
 }
 
-.content button {
-    background-color: #7289da;
-    color: #fff;
+form {
+    margin-bottom: 20px;
+    background-color: #3c3c3c; /* Slightly lighter gray for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    color: #e0e0e0;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px 0;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-.content button:hover {
-    background-color: #5a6fbd;
+input, select {
+    background-color: #4c4c4c; /* Darker gray for input fields */
+    color: #e0e0e0;
+}
+
+button {
+    background-color: #1e90ff; /* Light blue button */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c86ee; /* Slightly darker blue on hover */
+}
+
+#meme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.meme-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #1e90ff; /* Light blue border for the meme */
+    margin-top: 20px;
+    border-radius: 8px;
 }

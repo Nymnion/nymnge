@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Movie List</title>
     <link rel="stylesheet" href="style.css">
+    <title>Meme Generator</title>
 </head>
 <body>
-    <div class="hero">
-        <div class="content">
-            <h1>NymN's Movies</h1>
-            <p>:P</p>
-
-        </div>
-    </div>
+    <h1>Meme Generator</h1>
+    <form id="meme-form">
+        <label for="meme-name">Meme Template:</label>
+        <select id="meme-name" name="meme" required>
+            <option value="1st-World-Canadian-Problems">1st World Canadian Problems</option>
+            <option value="Ancient-Aliens">Ancient Aliens</option>
+            <option value="Bad-Luck-Brian">Bad Luck Brian</option>
+            <option value="Condescending-Wonka">Condescending Wonka</option>
+            <option value="Disaster-Girl">Disaster Girl</option>
+            <option value="Drake-Hotline-Bling">Drake Hotline Bling</option>
+            <option value="Grumpy-Cat">Grumpy Cat</option>
+            <option value="Mocking-Spongebob">Mocking Spongebob</option>
+            <option value="One-Does-Not-Simply">One Does Not Simply</option>
+            <option value="Philosoraptor">Philosoraptor</option>
+            <option value="Roll-Safe-Think-About-It">Roll Safe Think About It</option>
+            <option value="Success-Kid">Success Kid</option>
+            <option value="The-Most-Interesting-Man-In-The-World">The Most Interesting Man In The World</option>
+        </select>
+        <label for="top-text">Top Text:</label>
+        <input type="text" id="top-text" name="top" required>
+        <label for="bottom-text">Bottom Text:</label>
+        <input type="text" id="bottom-text" name="bottom" required>
+        <button type="submit">Generate Meme</button>
+    </form>
+    <div id="meme-container"></div>
+    <script src="script.js"></script>
 </body>
 </html>
